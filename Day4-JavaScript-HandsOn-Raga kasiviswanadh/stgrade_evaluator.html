@@ -1,0 +1,72 @@
+<!--Problem 2: Student Grade Evaluator (Level-1)
+Scenario
+A school wants a simple JavaScript program to evaluate a student’s performance based on marks obtained in a subject.
+📌 Requirements
+•	Accept the student’s marks as a variable
+•	Use if–else statements to assign grades:
+•	Marks ≥ 75 → Grade A
+•	Marks ≥ 60 → Grade B
+•	Marks ≥ 40 → Grade C
+•	Marks < 40 → Fail
+Display the grade on the web page or console
+
+🛠️ Technical Constraints
+•	Use JavaScript variables (let or const)
+•	Use numeric data types
+•	Use comparison and logical operators
+•	No functions or arrays allowed
+•	Output using console.log() or document.write()
+
+🎯 Learning Outcome
+You should be able to:
+•	Declare and use variables
+•	Apply comparison operators
+•	Implement conditional logic using if–else
+•	Understand decision-making in JavaScript
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Evaluator</title>
+</head>
+<body>
+
+<h2>Student Grade Evaluator</h2>
+
+<script>
+    let marks = prompt("enter marks:");
+    let grade;
+
+    if (marks >= 75) {
+        grade = "Grade A";
+    } else if (marks >= 60) {
+        grade = "Grade B";
+    } else if (marks >= 40) {
+        grade = "Grade C";
+    } else {
+        grade = "Fail";
+    }
+
+    document.write("Student Marks: " + marks + "<br>");
+    document.write("Grade: " + grade);
+</script>
+
+</body>
+</html>
+<!--EXPLAINATION:
+A variable marks is declared using let.
+
+Another variable grade is declared to store result.
+
+If marks are greater than or equal to 75, Grade A is assigned.
+
+Else if marks are greater than or equal to 60, Grade B is assigned.
+
+Else if marks are greater than or equal to 40, Grade C is assigned.
+
+Otherwise, the student is marked as Fail.
+
+The result is displayed using console.log().
+
+This program demonstrates conditional decision making.
+-->

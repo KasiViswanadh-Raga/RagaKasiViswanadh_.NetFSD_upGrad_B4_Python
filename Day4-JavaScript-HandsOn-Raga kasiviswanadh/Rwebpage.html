@@ -1,0 +1,78 @@
+<!--Problem 1
+Assessment Goal: Ensure learners understand responsiveness and screen adaptability.
+Hands-on Tasks:
+1.	Add viewport meta tag to the HTML page
+2.	Use media queries to:
+o	Change background color on mobile screen
+o	Adjust font size for smaller screens
+3.	Convert navigation into vertical layout on mobile
+4.	Test the page using browser responsive mode
+Expected Outcome:
+A webpage that looks different and readable on mobile and desktop screens.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            background-color: darkblue;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: lightgreen;
+                font-size: 14px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<h1>Responsive Design Example</h1>
+<p>This page changes layout on mobile screens.</p>
+
+</body>
+</html>
+<!--EXPLAINATION:
+The viewport meta tag makes the page responsive on all devices.
+
+The body has default background color and font styling.
+
+Navigation is displayed horizontally using Flexbox.
+
+Media query is used for screens smaller than 768px.
+
+Background color changes on mobile devices.
+
+Font size is reduced for better readability.
+
+Navigation changes to vertical layout on smaller screens.
+
+This ensures the webpage adapts to different screen sizes.
+-->
