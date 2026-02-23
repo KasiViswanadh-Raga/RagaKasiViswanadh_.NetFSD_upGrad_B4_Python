@@ -1,0 +1,76 @@
+<!--Problem 3: Product Feature List Section (Level-1)
+Scenario
+You are designing a feature highlight section for a product landing page that lists key features in a visually appealing way.
+📌 Requirements
+ Create a section with:
+•	Section heading
+•	List of 4–5 features
+Style the list using:
+•	Custom fonts
+•	Text color and background color
+•	Border and padding for each feature item
+Use:
+•	CSS selectors (element, class, descendant)
+Apply hover effects on feature items
+
+🛠️ Technical Constraints
+•	Use unordered list (<ul>)
+•	No JavaScript
+•	No layout frameworks
+•	Only basic HTML structure
+🎯 Learning Outcome
+You will be able to:
+•	Practice CSS selectors
+•	Style lists professionally
+•	Improve UI consistency
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Features</title>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+
+        .features {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features li {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #00acc1;
+        }
+
+        .features li:hover {
+            background-color: #b2ebf2;
+        }
+    </style>
+</head>
+<body>
+
+<section class="features">
+    <h2>Product Features</h2>
+    <ul>
+        <li>Fast Performance</li>
+        <li>Secure Architecture</li>
+        <li>Cloud Integration</li>
+        <li>User Friendly Interface</li>
+    </ul>
+</section>
+
+</body>
+</html>

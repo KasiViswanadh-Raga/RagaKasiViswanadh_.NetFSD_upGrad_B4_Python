@@ -1,0 +1,54 @@
+/* Apply styles to headings */
+h1 {
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Apply styles to paragraph */
+p {
+    font-size: 18px;
+    color: darkgreen;
+}
+
+/* Section styling */
+.content-section {
+    background-color: #f0f8ff;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Box model demonstration */
+.box {
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 40px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    background-color: #fff3cd;
+    border: 2px solid orange;
+    padding: 20px;
+    margin: 20px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
